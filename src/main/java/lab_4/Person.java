@@ -1,5 +1,6 @@
 package lab_4;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Person
@@ -7,12 +8,12 @@ public class Person
 	private int id;
 	private String name;
 	private String gender;
-	private int salary;
+	private BigDecimal salary;
 	private Division division;
     private LocalDate birthday;
     
     
-    public Person(int id, String name, String gender, int salary, Division division, LocalDate birthday)
+    public Person(int id, String name, String gender, LocalDate birthday, Division division, BigDecimal salary)
     {
     	this.id = id;
     	this.name = name;
@@ -22,7 +23,7 @@ public class Person
     	this.birthday = birthday;	
     }
     
-    public int getId()
+	public int getId()
     {
     	return id;
     }
@@ -37,7 +38,7 @@ public class Person
     	return gender;
     }
     
-    public int getSalary()
+    public BigDecimal getSalary()
     {
     	return salary;
     }

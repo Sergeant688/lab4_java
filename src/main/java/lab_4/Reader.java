@@ -12,11 +12,22 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Класс для чтения данных сотрудников из файла.
+ */
 public class Reader
 {
 
     private static DateTimeFormatter date_form = DateTimeFormatter.ofPattern("dd.MM.yyyy");
 
+    /**
+     * Метод для чтения списка людей из файла, находящегося в ресурсах проекта.
+     *
+     * @param filePath  путь к файлу
+     * @param separator разделитель
+     * @return Список объектов {@link Person}
+     * @throws IOException если возникают проблемы при чтении файла
+     */
     public List<Person> read(String filePath, char separator) throws IOException
     {
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(filePath))
@@ -25,7 +36,13 @@ public class Reader
         }
     }
 
-    
+    /**
+     * Вспомогательный метод для чтения.
+     *
+     * @param in поток данных
+     * @param separator разделитель
+     * @return список загруженных людей
+     */
     public List<Person> readPersons(InputStream in, char separator) throws IOException 
     {
         List<Person> persons = new ArrayList<>();

@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+/**
+ * Главный класс. Считывает всех сотрудников из файла.
+ * Заполняет список и выводит результат.
+ */
 public class Main 
 {
     public static void main(String[] args) throws IOException 

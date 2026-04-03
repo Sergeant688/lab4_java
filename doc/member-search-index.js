@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"lab_4","c":"Reader","l":"read(String, char)","u":"read(java.lang.String,char)"},{"p":"lab_4","c":"Reader","l":"Reader()","u":"%3Cinit%3E()"},{"p":"lab_4","c":"Reader","l":"readPersons(InputStream, char)","u":"readPersons(java.io.InputStream,char)"}];updateSearchResults();
